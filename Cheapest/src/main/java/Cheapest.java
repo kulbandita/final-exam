@@ -18,7 +18,7 @@ public class Cheapest {
         return false;
     }
 
-    public int cart() {
+    public int getType() {
         int type = 0;
         for (int i = 0; i < product.size(); i++) {
             if (product.get(i) != 0) {
@@ -31,7 +31,7 @@ public class Cheapest {
 
     public double calculatePrice() {
         while (hasProduct()) {
-            switch (cart()) {
+            switch (getType()) {
                 case 1:
                     totalPrice += 1 * PRODUCT_PRICE;
                     break;
@@ -51,5 +51,4 @@ public class Cheapest {
         }
         return totalPrice;
     }
-
 }
