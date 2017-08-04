@@ -44,7 +44,7 @@ public class CheapestTest {
     @Test
     public void case_A1_B1_C1_D1_E1() {
         cheapest = new Cheapest(list(1, 1, 1, 1, 1));
-        double expectedValue = 425;
+        double expectedValue = 375;
         double actualValue = cheapest.calculatePrice();
         assertEquals(expectedValue, actualValue, 0);
     }
@@ -59,7 +59,6 @@ public class CheapestTest {
     }
 
     @Test
-    @Ignore
     public void case_A2_B1() {
         cheapest = new Cheapest(list(2, 1, 0, 0, 0));
         double expectedValue = 290;
@@ -68,7 +67,6 @@ public class CheapestTest {
     }
 
     @Test
-    @Ignore
     public void case_A2_B1_C1() {
         cheapest = new Cheapest(list(2, 1, 1, 0, 0));
         double expectedValue = 370;
@@ -77,7 +75,6 @@ public class CheapestTest {
     }
 
     @Test
-    @Ignore
     public void case_A2_B1_C1_D1() {
         cheapest = new Cheapest(list(2, 1, 1, 1, 0));
         double expectedValue = 420;
