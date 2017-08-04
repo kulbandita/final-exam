@@ -31,7 +31,6 @@ public class AscendingTest {
     }
 
     @Test
-    @Ignore
     public void case_N_132() {
         BigInteger expectedValue = new BigInteger("129");
         BigInteger actualValue = ascending.findNumber(new BigInteger("132"));
